@@ -67,28 +67,38 @@ https://templatemo.com/tm-546-sixteen-clothing
               </li>
               <li class="nav-item">
 
-              @if (Route::has('login'))
+              <?php if(Route::has('login')): ?>
                 
-                    @auth
+                    <?php if(auth()->guard()->check()): ?>
                     <li class="nav-item">
-                <a class="nav-link" href="{{url('showcart')}}">
+                <a class="nav-link" href="<?php echo e(url('showcart')); ?>">
                 <i class="fal fa-shopping-cart"></i>
-                  Cart[{{$count}}]</a>
+                  Cart[<?php echo e($count); ?>]</a>
               </li>
 
-                        <x-app-layout>
+                        <?php if (isset($component)) { $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\AppLayout::class, []); ?>
+<?php $component->withName('app-layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
 
-                        </x-app-layout>
+                         <?php if (isset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da)): ?>
+<?php $component = $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da; ?>
+<?php unset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
                         
-                    @else
-                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a><li>
+                    <?php else: ?>
+                        <li><a class="nav-link" href="<?php echo e(route('login')); ?>" >Log in</a><li>
 
-                        @if (Route::has('register'))
-                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a><li>
-                        @endif
-                    @endauth
+                        <?php if(Route::has('register')): ?>
+                            <li><a class="nav-link" href="<?php echo e(route('register')); ?>" >Register</a><li>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 
-            @endif
+            <?php endif; ?>
             <li>
 
 
@@ -98,12 +108,13 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </nav>
-      @if(session()->has('message'))
+      <?php if(session()->has('message')): ?>
       <div class="alert alert-success">
           <button type="button" class="close" data-dismiss="alert">x</button>
-          {{session()->get('message')}}
+          <?php echo e(session()->get('message')); ?>
+
       </div>
-      @endif
+      <?php endif; ?>
     </header>
 
     <!-- Page Content -->
@@ -111,7 +122,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     
     <!-- Banner Ends Here -->
 
-    @include('user.product')
+    <?php echo $__env->make('user.product', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
     
@@ -168,3 +179,4 @@ https://templatemo.com/tm-546-sixteen-clothing
   </body>
 
 </html>
+<?php /**PATH D:\Drive4\Ecommerce-web-application\resources\views/user/home.blade.php ENDPATH**/ ?>

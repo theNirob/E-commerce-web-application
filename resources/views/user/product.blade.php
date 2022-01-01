@@ -10,8 +10,7 @@
 
               @csrf 
 
-                <input class="form-control" type="search" name="search" placeholder="search">
-                <input type="Submit" value="Search" class="btn btn-success">
+              
               </form>
             </div>
           </div>

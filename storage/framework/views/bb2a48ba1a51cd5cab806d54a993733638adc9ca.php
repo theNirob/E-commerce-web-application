@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Sixteen Clothing HTML Template</title>
+    <title>E DEAL</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,7 +45,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>E DEAL </h2></a>
+          <a class="navbar-brand" href="index.html"><h2>Sixteen <em>Clothing</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,28 +67,38 @@ https://templatemo.com/tm-546-sixteen-clothing
               </li>
               <li class="nav-item">
 
-              @if (Route::has('login'))
+              <?php if(Route::has('login')): ?>
                 
-                    @auth
+                    <?php if(auth()->guard()->check()): ?>
                     <li class="nav-item">
-                <a class="nav-link" href="{{url('showcart')}}">
+                <a class="nav-link" href="<?php echo e(url('showcart')); ?>">
                 <i class="fal fa-shopping-cart"></i>
-                  Cart[{{$count}}]</a>
+                  Cart[<?php echo e($count); ?>]</a>
               </li>
 
-                        <x-app-layout>
+                        <?php if (isset($component)) { $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\AppLayout::class, []); ?>
+<?php $component->withName('app-layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
 
-                        </x-app-layout>
+                         <?php if (isset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da)): ?>
+<?php $component = $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da; ?>
+<?php unset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
                         
-                    @else
-                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a><li>
+                    <?php else: ?>
+                        <li><a class="nav-link" href="<?php echo e(route('login')); ?>" >Log in</a><li>
 
-                        @if (Route::has('register'))
-                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a><li>
-                        @endif
-                    @endauth
+                        <?php if(Route::has('register')): ?>
+                            <li><a class="nav-link" href="<?php echo e(route('register')); ?>" >Register</a><li>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 
-            @endif
+            <?php endif; ?>
             <li>
 
 
@@ -98,46 +108,39 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </nav>
-      @if(session()->has('message'))
+      <?php if(session()->has('message')): ?>
       <div class="alert alert-success">
           <button type="button" class="close" data-dismiss="alert">x</button>
-          {{session()->get('message')}}
+          <?php echo e(session()->get('message')); ?>
+
       </div>
-      @endif
+      <?php endif; ?>
     </header>
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    
-    <!-- Banner Ends Here -->
+    <div style="padding:100px" align="center">
+   <table>
+       <tr style="background-color:gray;">
+           <td style="padding:10px; font-size: 20px;">Product Name</td>
+           <td style="padding:10px; font-size: 20px;">Quantity</td>
+           <td style="padding:10px; font-size: 20px;">Price</td>
+           <td style="padding:10px; font-size: 20px;">Action</td>
+       </tr>
+       <form action="<?php echo e(url('order')); ?>" method="POST">
+           <?php echo csrf_field(); ?>
+<?php $__currentLoopData = $cart; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $carts): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+       <tr style="background-color:black;">
+           <td style="padding:10px; color:blue;"> <input type="text" name="productname[]" value="<?php echo e($carts->product_title); ?>" hidden=""> <?php echo e($carts->product_title); ?></td>
+           <td style="padding:10px; color:blue;"> <input type="text" name="quantity[]" value="<?php echo e($carts->quantity); ?>" hidden=""><?php echo e($carts->quantity); ?></td>
+           <td style="padding:10px; color:blue;"> <input type="text" name="price[]" value="<?php echo e($carts->price); ?>" hidden=""><?php echo e($carts->price); ?></td>
+           <td style="padding:10px; color:white;"><a class="btn btn-danger" href="<?php echo e(url('delete',$carts->id)); ?>">Delete</a></td>
+       </tr>
+       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+   </table>
 
-    @include('user.product')
+<button class="btn btn-success">Confirm Order</button>
 
-
-    
-    <footer class="bg-primary py-5">
-    <div class="row">
-      <div class="col-2">
-      </div>
-
-      <div class="col-3">
-        <h5>Customer Care</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Help Center</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">How to Buy</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Returns & Refunds</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terms & Conditions</a></li>
-        </ul>
-      </div>
-
-      <div class="col-2">
-      </div>
-
-    
-    </div>
-     
-    </footer>
+   </form>
+   </div>
 
 
     <!-- Bootstrap core JavaScript -->
@@ -168,3 +171,4 @@ https://templatemo.com/tm-546-sixteen-clothing
   </body>
 
 </html>
+<?php /**PATH D:\Drive4\Ecommerce-web-application\resources\views/user/showcart.blade.php ENDPATH**/ ?>

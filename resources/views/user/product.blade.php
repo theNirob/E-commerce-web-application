@@ -4,8 +4,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <h2 class=" ">Latest Products</h2>
               <form action="{{url('search')}}" method="get" class="form-inline" style="float: right; padding: 10px;">
 
               @csrf 
@@ -17,12 +16,12 @@
           
          @foreach($data as $product)
           <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img height="300" width="150" src="{{ asset('app/'.$product->image)}}" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>{{$product->title}}</h4></a>
-                <h6>{{$product->price}} TAKA</h6>
-                <p>{{$product->description}}</p>
+            <div class="card">
+              <a class="card-img-top" href="#"><img height="187" width="200" src="{{ asset('app/'.$product->image)}}" alt=""></a>
+              <div class="card-body ">
+                <h4 class="card-title">{{$product->title}}</h4>
+                <h6 class="card-subtitle mb-2 text-muted">{{$product->price}} TAKA</h6>
+                <p class="card-text">{{$product->description}}</p>
                 
                 <form action="{{url('addcart',$product->id)}}" method="POST">
                   @csrf

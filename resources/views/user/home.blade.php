@@ -10,161 +10,161 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Sixteen Clothing HTML Template</title>
+    <title>Headers · Bootstrap v5.1</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!--
+<link rel="canonical" href="{{ asset('css/headers.css') }}">
+<link rel="canonical" href="{{ asset('css/navbar.css') }}">
 
-TemplateMo 546 Sixteen Clothing
 
-https://templatemo.com/tm-546-sixteen-clothing
 
--->
+<!-- Bootstrap core CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
 
-  </head>
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
-  <body>
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
 
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>E DEAL </h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
+<!-- Custom styles for this template -->
+<link href="headers.css" rel="stylesheet">
+</head>
+<body>
 
+<header class="p-3 bg-dark text-white">
+<div class="container">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use/></svg> <h2>E DEAL</h2>
+    </a>
+
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+    
+    </ul>
+
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+      <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+    </form>
+
+    <div class="text-end">
+      
+      <button type="button" class="btn btn-warning">  
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
               @if (Route::has('login'))
+            
+              @auth
+              <li class="nav-item">
+          <a class="nav-link" href="{{url('showcart')}}">
+          <i class="fal fa-shopping-cart"></i>
+            Cart[{{$count}}]</a>
+        </li>
+
                 
-                    @auth
-                    <li class="nav-item">
-                <a class="nav-link" href="{{url('showcart')}}">
-                <i class="fal fa-shopping-cart"></i>
-                  Cart[{{$count}}]</a>
-              </li>
+                  @else
+                      <a href="{{ route('login') }}" class="dropdown-item">Log in</a>
 
-                        <x-app-layout>
-
-                        </x-app-layout>
-                        
-                    @else
-                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a><li>
-
-                        @if (Route::has('register'))
-                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a><li>
-                        @endif
-                    @endauth
-                
-            @endif
-            <li>
-
-
-
-
+                      @if (Route::has('register'))
+                          <a href="{{ route('register') }}" class="dropdown-item">Register</a>
+                      @endif
+                  @endauth
+              </div>
+          @endif
             </ul>
-          </div>
-        </div>
-      </nav>
-      @if(session()->has('message'))
-      <div class="alert alert-success">
-          <button type="button" class="close" data-dismiss="alert">x</button>
-          {{session()->get('message')}}
-      </div>
-      @endif
-    </header>
+          </li>
+        </ul>
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    
-    <!-- Banner Ends Here -->
+      </button>  
 
-    @include('user.product')
+   
+    </div>
+  </div>
+   
+  <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-
-    
-    <footer class="bg-primary py-5">
-    <div class="row">
-      <div class="col-2">
-      </div>
-
-      <div class="col-3">
-        <h5>Customer Care</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Help Center</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">How to Buy</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Returns & Refunds</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terms & Conditions</a></li>
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sale</a>
+          </li>
         </ul>
       </div>
-
-      <div class="col-2">
-      </div>
-
-    
     </div>
-     
-    </footer>
+  </nav>
+
+</div>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+@if(session()->has('message'))
+  <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">x</button>
+      {{session()->get('message')}}
+  </div>
+  @endif
+</header>
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+
+<!-- Banner Ends Here -->
+
+@include('user.product')
 
 
-    <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/isotope.js"></script>
-    <script src="assets/js/accordions.js"></script>
+<footer class="bg-primary py-5">
+<div class="row">
+  <div class="col-2">
+  </div>
+
+  <div class="col-3">
+    <h5>Customer Care</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Help Center</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">How to Buy</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Returns & Refunds</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Terms & Conditions</a></li>
+    </ul>
+  </div>
+
+  <div class="col-2">
+  </div>
 
 
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
+</div>
+ 
+</footer>
 
 
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+  
+</body>
 </html>

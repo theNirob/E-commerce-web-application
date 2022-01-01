@@ -4,8 +4,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <h2 class=" ">Latest Products</h2>
               <form action="<?php echo e(url('search')); ?>" method="get" class="form-inline" style="float: right; padding: 10px;">
 
               <?php echo csrf_field(); ?> 
@@ -17,12 +16,12 @@
           
          <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img height="300" width="150" src="<?php echo e(asset('app/'.$product->image)); ?>" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4><?php echo e($product->title); ?></h4></a>
-                <h6><?php echo e($product->price); ?> TAKA</h6>
-                <p><?php echo e($product->description); ?></p>
+            <div class="card">
+              <a class="card-img-top" href="#"><img height="187" width="200" src="<?php echo e(asset('app/'.$product->image)); ?>" alt=""></a>
+              <div class="card-body ">
+                <h4 class="card-title"><?php echo e($product->title); ?></h4>
+                <h6 class="card-subtitle mb-2 text-muted"><?php echo e($product->price); ?> TAKA</h6>
+                <p class="card-text"><?php echo e($product->description); ?></p>
                 
                 <form action="<?php echo e(url('addcart',$product->id)); ?>" method="POST">
                   <?php echo csrf_field(); ?>

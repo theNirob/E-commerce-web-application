@@ -66,6 +66,8 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
 
+              <!-- Account-->
+
               <?php if(Route::has('login')): ?>
                 
                     <?php if(auth()->guard()->check()): ?>

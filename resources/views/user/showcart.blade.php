@@ -120,10 +120,9 @@
   @endif
 </header>
 
-<!-- Page Content -->
-<!-- Banner Starts Here -->
 
-<!-- Banner Ends Here -->
+
+<!-- product list -->
 
 <div style="padding:100px" align="center">
   <table>

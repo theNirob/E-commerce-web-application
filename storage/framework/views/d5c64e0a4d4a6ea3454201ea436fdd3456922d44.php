@@ -15,6 +15,7 @@
 
         <!-- Scripts -->
         <script src="<?php echo e(mix('js/app.js')); ?>" defer></script>
+          <!-- Scripts End -->
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">

@@ -29,19 +29,27 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 
+/*
+  customer Routes
+
+*/
 route::get('/redirect',[HomeController::class,'redirect']);
 route::get('/',[HomeController::class,'index']);
-route::get('/product',[AdminController::class,'product']);
-route::post('/uploadproduct',[AdminController::class,'uploadproduct']);
-
-route::get('/showproduct',[AdminController::class,'showproduct']);
-route::get('/deleteproduct/{id}',[AdminController::class,'deleteproduct']);
-route::get('/updateview/{id}',[AdminController::class,'updateview']);
-route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
 route::get('/search/',[HomeController::class,'search']);
 route::post('/addcart/{id}',[HomeController::class,'addcart']);
 route::get('/showcart/',[HomeController::class,'showcart']);
 route::get('/delete/{id}',[HomeController::class,'deletecart']);
 route::post('/order/',[HomeController::class,'confirmorder']);
+/*
+  admin Routes
+
+*/
+route::get('/product',[AdminController::class,'product']);
+route::post('/uploadproduct',[AdminController::class,'uploadproduct']);
+route::get('/showproduct',[AdminController::class,'showproduct']);
+route::get('/deleteproduct/{id}',[AdminController::class,'deleteproduct']);
+route::get('/updateview/{id}',[AdminController::class,'updateview']);
 route::get('/showorder/',[AdminController::class,'showorder']);
 route::get('/updatestatus/{id}',[AdminController::class,'updatestatus']);
+route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
+

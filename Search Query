@@ -1,0 +1,12 @@
+$searchTerm ='TShirt Shirt ABC';
+$reservedSymbols = ['-', '+', '<', '>', '@', '(', ')', '~'];
+$searchTerm = str_replace($reservedSymbols, ' ', $searchTerm);
+
+$searchValues = preg_split('/\s+/', $searchTerm, -1, PREG_SPLIT_NO_EMPTY);
+
+$res = User::where(function ($q) use ($searchValues) {
+	foreach ($searchValues as $value) {
+    $q->orWhere('name', 'like', "%{$value}%");
+    $q->orWhere('product_name', 'like', "%{$value}%");
+    }
+})->get();

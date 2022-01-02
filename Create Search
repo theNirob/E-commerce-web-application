@@ -1,0 +1,10 @@
+public function index(){
+      // // we need to show all data from "product" table
+      // $products = Product::all();
+      // // show data to our view
+      // return view('product.index',['product' => $products]);
+
+      $search = Request::get('search');
+      $products = Product::where('title','like','%'.$search.'%')->orderBy('id')->paginate(6);
+      return view('products.index',['product' => $products]);
+    }

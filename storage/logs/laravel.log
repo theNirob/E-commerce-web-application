@@ -5660,3 +5660,478 @@ avigation-menu.blade.php) at D:\\New folder\\htdocs\\Ecommerce\esources\\views/
 #49 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
 #50 {main}
 "} 
+[2022-01-02 09:56:15] local.ERROR: foreach() argument must be of type array|object, null given {"userId":5,"exception":"[object] (ErrorException(code: 0): foreach() argument must be of type array|object, null given at D:\\Drive4\\Ecommerce-web-application\\app\\Http\\Controllers\\HomeController.php:100)
+[stacktrace]
+#0 D:\\Drive4\\Ecommerce-web-application\\app\\Http\\Controllers\\HomeController.php(100): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'foreach() argum...', 'D:\\\\Drive4\\\\Ecomm...', 100)
+#1 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\HomeController->confirmorder(Object(Illuminate\\Http\\Request))
+#2 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('confirmorder', Array)
+#3 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\HomeController), 'confirmorder')
+#4 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Route->run()
+#6 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\AuthenticateSession.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\AuthenticateSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#17 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Drive4\\Ecommerce-web-application\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 D:\\Drive4\\Ecommerce-web-application\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
+#50 {main}
+"} 
+[2022-01-02 10:05:12] local.ERROR: Undefined variable $logo (View: D:\Drive4\Ecommerce-web-application\vendor\laravel\jetstream\resources\views\components\authentication-card.blade.php) {"view":{"view":"D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\jetstream\\src/../resources/views/components/authentication-card.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1591328487 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#452</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1591328487\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","attributes":"<pre class=sf-dump id=sf-dump-803416814 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\View\\ComponentAttributeBag</span> {<a class=sf-dump-ref>#477</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-803416814\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","slot":"<pre class=sf-dump id=sf-dump-133213954 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\HtmlString</span> {<a class=sf-dump-ref>#487</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">html</span>: \"\"\"
+    <span class=sf-dump-str title=\"2095 characters\">&lt;form method=&quot;POST&quot; action=&quot;http://127.0.0.1:8000/login&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;jGuFVpQmmSjlfe0m2BmAAjOzQfxCOjFWo5znm5T0&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;email&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">    Email<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full&quot; id=&quot;email&quot; type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; autofocus=&quot;autofocus&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">    Password<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full&quot; id=&quot;password&quot; type=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; autocomplete=&quot;current-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;block mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;label for=&quot;remember_me&quot; class=&quot;flex items-center&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                    &lt;input type=&quot;checkbox&quot; class=&quot;rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50&quot; id=&quot;remember_me&quot; name=&quot;remember&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                    &lt;span class=&quot;ml-2 text-sm text-gray-600&quot;&gt;Remember me&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;flex items-center justify-end mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                                    &lt;a class=&quot;underline text-sm text-gray-600 hover:text-gray-900&quot; href=&quot;http://127.0.0.1:8000/forgot-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                        Forgot your password?<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                    &lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                <span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">                &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">    Log in<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+    <span class=sf-dump-str title=\"2095 characters\">        &lt;/form&gt;</span>
+    \"\"\"
+</samp>}
+</pre><script>Sfdump(\"sf-dump-133213954\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","__laravel_slots":"<pre class=sf-dump id=sf-dump-465889317 data-indent-pad=\"  \"><span class=sf-dump-note>array:1</span> [<samp data-depth=1 class=sf-dump-expanded>
+  \"<span class=sf-dump-key>__default</span>\" => <span class=sf-dump-note title=\"Illuminate\\Support\\HtmlString
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Illuminate\\Support</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span>HtmlString</span> {<a class=sf-dump-ref>#487</a><samp data-depth=2 class=sf-dump-compact>
+    #<span class=sf-dump-protected title=\"Protected property\">html</span>: \"\"\"
+      <span class=sf-dump-str title=\"2095 characters\">&lt;form method=&quot;POST&quot; action=&quot;http://127.0.0.1:8000/login&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;jGuFVpQmmSjlfe0m2BmAAjOzQfxCOjFWo5znm5T0&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;email&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">    Email<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full&quot; id=&quot;email&quot; type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; autofocus=&quot;autofocus&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;label class=&quot;block font-medium text-sm text-gray-700&quot; for=&quot;password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">    Password<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">&lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;input  class=&quot;border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full&quot; id=&quot;password&quot; type=&quot;password&quot; name=&quot;password&quot; required=&quot;required&quot; autocomplete=&quot;current-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;block mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;label for=&quot;remember_me&quot; class=&quot;flex items-center&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                    &lt;input type=&quot;checkbox&quot; class=&quot;rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50&quot; id=&quot;remember_me&quot; name=&quot;remember&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                    &lt;span class=&quot;ml-2 text-sm text-gray-600&quot;&gt;Remember me&lt;/span&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;/label&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\"><span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;div class=&quot;flex items-center justify-end mt-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                                    &lt;a class=&quot;underline text-sm text-gray-600 hover:text-gray-900&quot; href=&quot;http://127.0.0.1:8000/forgot-password&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                        Forgot your password?<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                    &lt;/a&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                <span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">                &lt;button type=&quot;submit&quot; class=&quot;inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition ml-4&quot;&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">    Log in<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">&lt;/button&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">            &lt;/div&gt;<span class=\"sf-dump-default sf-dump-ns\">\
+</span></span>
+      <span class=sf-dump-str title=\"2095 characters\">        &lt;/form&gt;</span>
+      \"\"\"
+  </samp>}
+</samp>]
+</pre><script>Sfdump(\"sf-dump-465889317\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $logo (View: D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\jetstream\esources\\views\\components\\authentication-card.blade.php) at D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\jetstream\\src/../resources/views/components/authentication-card.blade.php:3)
+[stacktrace]
+#0 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\jetstream\\src/../resources/views/components/authentication-card.blade.php(3): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'D:\\\\Drive4\\\\Ecomm...', 3)
+#1 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\Drive4\\\\Ecomm...')
+#2 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Drive4\\\\Ecomm...', Array)
+#4 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#5 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\CompilerEngineForIgnition->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#6 D:\\Drive4\\Ecommerce-web-application\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#7 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#8 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#9 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#10 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(104): Illuminate\\View\\View->render()
+#11 D:\\Drive4\\Ecommerce-web-application\esources\\views/auth/login.blade.php(138): Illuminate\\View\\Factory->renderComponent()
+#12 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\Drive4\\\\Ecomm...')
+#13 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Drive4\\\\Ecomm...', Array)
+#15 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#16 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\CompilerEngineForIgnition->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#17 D:\\Drive4\\Ecommerce-web-application\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#18 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#19 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#20 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#21 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#22 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(794): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(763): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Laravel\\Fortify\\Http\\Responses\\SimpleViewResponse))
+#26 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Drive4\\Ecommerce-web-application\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'web')
+#29 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\AuthenticateSession.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\AuthenticateSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\Drive4\\Ecommerce-web-application\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\Drive4\\Ecommerce-web-application\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
+#72 {main}
+
+[previous exception] [object] (ErrorException(code: 0): Undefined variable $logo at D:\\Drive4\\Ecommerce-web-application\\storage\\framework\\views\\7665e825e882ba2fdf62b70e824bf8a68613f6c2.php:3)
+[stacktrace]
+#0 D:\\Drive4\\Ecommerce-web-application\\storage\\framework\\views\\7665e825e882ba2fdf62b70e824bf8a68613f6c2.php(3): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'D:\\\\Drive4\\\\Ecomm...', 3)
+#1 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\Drive4\\\\Ecomm...')
+#2 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#3 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Drive4\\\\Ecomm...', Array)
+#4 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#5 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\CompilerEngineForIgnition->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#6 D:\\Drive4\\Ecommerce-web-application\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#7 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#8 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#9 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#10 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(104): Illuminate\\View\\View->render()
+#11 D:\\Drive4\\Ecommerce-web-application\\storage\\framework\\views\\2833a7f182595cfeac33142c784b74cf9e5fdab6.php(138): Illuminate\\View\\Factory->renderComponent()
+#12 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\Drive4\\\\Ecomm...')
+#13 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#14 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\Drive4\\\\Ecomm...', Array)
+#15 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\ComponentConcerns\\RendersLivewireComponents.php(35): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#16 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Livewire\\CompilerEngineForIgnition->evaluatePath('D:\\\\Drive4\\\\Ecomm...', Array)
+#17 D:\\Drive4\\Ecommerce-web-application\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#18 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('D:\\\\Drive4\\\\Ecomm...', Array)
+#19 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
+#20 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#21 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(69): Illuminate\\View\\View->render()
+#22 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(35): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#23 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(794): Illuminate\\Http\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#24 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(763): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#25 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(695): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Laravel\\Fortify\\Http\\Responses\\SimpleViewResponse))
+#26 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Drive4\\Ecommerce-web-application\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'web')
+#29 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\AuthenticateSession.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\AuthenticateSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#39 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#46 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#47 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#48 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#49 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#50 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\Drive4\\Ecommerce-web-application\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#67 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\Drive4\\Ecommerce-web-application\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
+#72 {main}
+"} 
+[2022-01-02 12:26:30] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `sessions` where `id` = LdIaehXyNNSooBhsSN99QcTmAOWiFltA7dAZSWFS limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `sessions` where `id` = LdIaehXyNNSooBhsSN99QcTmAOWiFltA7dAZSWFS limit 1) at D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:703)
+[stacktrace]
+#0 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(663): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(367): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2351): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2339): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2873): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2340): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(259): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2314): Illuminate\\Database\\Query\\Builder->first(Array)
+#8 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\DatabaseSessionHandler.php(100): Illuminate\\Database\\Query\\Builder->find('LdIaehXyNNSooBh...')
+#9 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(97): Illuminate\\Session\\DatabaseSessionHandler->read('LdIaehXyNNSooBh...')
+#10 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(87): Illuminate\\Session\\Store->readFromHandler()
+#11 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(71): Illuminate\\Session\\Store->loadSession()
+#12 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(147): Illuminate\\Session\\Store->start()
+#13 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Session\\Middleware\\StartSession->Illuminate\\Session\\Middleware\\{closure}(Object(Illuminate\\Session\\Store))
+#14 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(148): tap(Object(Illuminate\\Session\\Store), Object(Closure))
+#15 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(116): Illuminate\\Session\\Middleware\\StartSession->startSession(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store))
+#16 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#17 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Drive4\\Ecommerce-web-application\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 D:\\Drive4\\Ecommerce-web-application\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
+#50 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it at D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1021): call_user_func(Object(Closure))
+#6 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1057): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(433): Illuminate\\Database\\Connection->getReadPdo()
+#8 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(359): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(696): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#10 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(663): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#11 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(367): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#12 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2351): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#13 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2339): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2873): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2340): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#16 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(259): Illuminate\\Database\\Query\\Builder->get(Array)
+#17 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2314): Illuminate\\Database\\Query\\Builder->first(Array)
+#18 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\DatabaseSessionHandler.php(100): Illuminate\\Database\\Query\\Builder->find('LdIaehXyNNSooBh...')
+#19 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(97): Illuminate\\Session\\DatabaseSessionHandler->read('LdIaehXyNNSooBh...')
+#20 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(87): Illuminate\\Session\\Store->readFromHandler()
+#21 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Store.php(71): Illuminate\\Session\\Store->loadSession()
+#22 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(147): Illuminate\\Session\\Store->start()
+#23 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(263): Illuminate\\Session\\Middleware\\StartSession->Illuminate\\Session\\Middleware\\{closure}(Object(Illuminate\\Session\\Store))
+#24 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(148): tap(Object(Illuminate\\Session\\Store), Object(Closure))
+#25 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(116): Illuminate\\Session\\Middleware\\StartSession->startSession(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store))
+#26 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest(Object(Illuminate\\Http\\Request), Object(Illuminate\\Session\\Store), Object(Closure))
+#27 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(697): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#34 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#35 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#36 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#37 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#38 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Drive4\\Ecommerce-web-application\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Livewire\\DisableBrowserCache->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\Drive4\\Ecommerce-web-application\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(38): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 D:\\Drive4\\Ecommerce-web-application\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#58 D:\\Drive4\\Ecommerce-web-application\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#59 D:\\Drive4\\Ecommerce-web-application\\server.php(21): require_once('D:\\\\Drive4\\\\Ecomm...')
+#60 {main}
+"} 

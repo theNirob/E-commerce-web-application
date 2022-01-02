@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Headers · Bootstrap v5.1</title>
+    <title>E DEAL</title>
 
 <link rel="canonical" href="<?php echo e(asset('css/headers.css')); ?>">
 <link rel="canonical" href="<?php echo e(asset('css/navbar.css')); ?>">
@@ -51,11 +51,13 @@
               <?php if(Route::has('login')): ?>
                 
                     <?php if(auth()->guard()->check()): ?>
-                    <li class="nav-item">
+              
+                          <li class="nav-item">
                 <a class="nav-link" href="<?php echo e(url('showcart')); ?>">
                 <i class="fal fa-shopping-cart"></i>
                   Cart[<?php echo e($count); ?>]</a>
-              </li>
+              </li>  
+            
 
                         <?php if (isset($component)) { $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da = $component; } ?>
 <?php $component = $__env->getContainer()->make(App\View\Components\AppLayout::class, []); ?>
@@ -153,14 +155,17 @@
       </tr>
       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
   </table>
-
-<button class="btn btn-success">Confirm Order</button>
+ <br>
+<button class="btn btn-success">Check Out</button>
+<br>
 
   </form>
+  <br>
+  <button class="btn btn-dark"><a href="http://127.0.0.1:8000/">Home</a></button>
+  
   </div>
 
-   <!-- Bootstrap core JavaScript -->
-
+  
 
    <!-- Additional Scripts -->
 

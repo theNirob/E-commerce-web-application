@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-        <title><?php echo e(config('app.name', 'Laravel')); ?></title>
+        <title><?php echo e(config('app.name', 'E DEAL')); ?></title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -37,15 +37,15 @@
             <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('navigation-menu')->html();
-} elseif ($_instance->childHasBeenRendered('wcyQm1j')) {
-    $componentId = $_instance->getRenderedChildComponentId('wcyQm1j');
-    $componentTag = $_instance->getRenderedChildComponentTagName('wcyQm1j');
+} elseif ($_instance->childHasBeenRendered('xHOSIXy')) {
+    $componentId = $_instance->getRenderedChildComponentId('xHOSIXy');
+    $componentTag = $_instance->getRenderedChildComponentTagName('xHOSIXy');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('wcyQm1j');
+    $_instance->preserveRenderedChild('xHOSIXy');
 } else {
     $response = \Livewire\Livewire::mount('navigation-menu');
     $html = $response->html();
-    $_instance->logRenderedChild('wcyQm1j', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('xHOSIXy', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

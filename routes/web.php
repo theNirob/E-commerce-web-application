@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+ 
 
 /*
 |--------------------------------------------------------------------------
@@ -14,30 +17,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('front.dashboard');
-})->middleware(['front'])->name('dashboard');
-
-
-require __DIR__.'/front_auth.php';
-
-// Admin routes
-Route::get('/admin/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('admin.dashboard');
+})->name('dashboard');
 
-require __DIR__.'/auth.php';
+route::get('/redirect',[HomeController::class,'redirect']);
+route::get('/',[HomeController::class,'index']);
+route::get('/product',[AdminController::class,'product']);
+route::post('/uploadproduct',[AdminController::class,'uploadproduct']);
 
-
-
-
-Route::namespace('App\Http\Controllers\Admin')->name('admin.')->prefix('admin')
-    ->group(function(){
-        Route::resource('roles','RoleController');
-        Route::resource('permissions','PermissionController');
-        Route::resource('users','UserController');
-        Route::resource('posts','PostController');
-});
+route::get('/showproduct',[AdminController::class,'showproduct']);
+route::get('/deleteproduct/{id}',[AdminController::class,'deleteproduct']);
+route::get('/updateview/{id}',[AdminController::class,'updateview']);
+route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
+route::get('/search/',[HomeController::class,'search']);
+route::post('/addcart/{id}',[HomeController::class,'addcart']);
+route::get('/showcart/',[HomeController::class,'showcart']);
+route::get('/delete/{id}',[HomeController::class,'deletecart']);
+route::post('/order/',[HomeController::class,'confirmorder']);
+route::get('/showorder/',[AdminController::class,'showorder']);
+route::get('/updatestatus/{id}',[AdminController::class,'updatestatus']);

@@ -59,40 +59,55 @@
     </form>
 
     <div class="text-end">
-      
-      <button type="button" class="btn btn-warning">  
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-              <?php if(Route::has('login')): ?>
-            
-              <?php if(auth()->guard()->check()): ?>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-          <a class="nav-link" href="<?php echo e(url('showcart')); ?>">
-          <i class="fal fa-shopping-cart"></i>
-            Cart[<?php echo e($count); ?>]</a>
-        </li>
 
+              <?php if(Route::has('login')): ?>
                 
-                  <?php else: ?>
-                      <a href="<?php echo e(route('login')); ?>" class="dropdown-item">Log in</a>
+                    <?php if(auth()->guard()->check()): ?>
+                    <li class="nav-item">
+                <a class="nav-link" href="<?php echo e(url('showcart')); ?>">
+                <i class="fal fa-shopping-cart"></i>
+                  Cart[<?php echo e($count); ?>]</a>
+              </li>
 
-                      <?php if(Route::has('register')): ?>
-                          <a href="<?php echo e(route('register')); ?>" class="dropdown-item">Register</a>
-                      <?php endif; ?>
-                  <?php endif; ?>
-              </div>
-          <?php endif; ?>
+                        <?php if (isset($component)) { $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\AppLayout::class, []); ?>
+<?php $component->withName('app-layout'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+
+                         <?php if (isset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da)): ?>
+<?php $component = $__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da; ?>
+<?php unset($__componentOriginal8e2ce59650f81721f93fef32250174d77c3531da); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+                        
+                    <?php else: ?>
+                        <li><a class="nav-link" href="<?php echo e(route('login')); ?>" >Log in</a><li>
+
+                        <?php if(Route::has('register')): ?>
+                            <li><a class="nav-link" href="<?php echo e(route('register')); ?>" >Register</a><li>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                
+            <?php endif; ?>
+            <li>
+
+
+
+
             </ul>
-          </li>
-        </ul>
-
-      </button>  
-
-   
-    </div>
-  </div>
+          </div>
+        
+      </nav>
+      </div>
    
   <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
     <div class="container-fluid">

@@ -59,40 +59,45 @@
     </form>
 
     <div class="text-end">
-      
-      <button type="button" class="btn btn-warning">  
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-              @if (Route::has('login'))
-            
-              @auth
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-          <a class="nav-link" href="{{url('showcart')}}">
-          <i class="fal fa-shopping-cart"></i>
-            Cart[{{$count}}]</a>
-        </li>
 
+              @if (Route::has('login'))
                 
-                  @else
-                      <a href="{{ route('login') }}" class="dropdown-item">Log in</a>
+                    @auth
+                    <li class="nav-item">
+                <a class="nav-link" href="{{url('showcart')}}">
+                <i class="fal fa-shopping-cart"></i>
+                  Cart[{{$count}}]</a>
+              </li>
 
-                      @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="dropdown-item">Register</a>
-                      @endif
-                  @endauth
-              </div>
-          @endif
+                        <x-app-layout>
+
+                        </x-app-layout>
+                        
+                    @else
+                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a><li>
+
+                        @if (Route::has('register'))
+                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a><li>
+                        @endif
+                    @endauth
+                
+            @endif
+            <li>
+
+
+
+
             </ul>
-          </li>
-        </ul>
-
-      </button>  
-
-   
-    </div>
-  </div>
+          </div>
+        
+      </nav>
+      </div>
    
   <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
     <div class="container-fluid">

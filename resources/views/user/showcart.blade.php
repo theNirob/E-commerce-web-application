@@ -21,25 +21,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-<style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-</style>
-
-
-<!-- Custom styles for this template -->
-<link href="headers.css" rel="stylesheet">
 </head>
 <body>
 
@@ -59,39 +41,45 @@
     </form>
 
     <div class="text-end">
-      
-      <button type="button" class="btn btn-warning">  
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-              @if (Route::has('login'))
-            
-              @auth
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
+
+              @if (Route::has('login'))
+                
+                    @auth
+                    <li class="nav-item">
                 <a class="nav-link" href="{{url('showcart')}}">
                 <i class="fal fa-shopping-cart"></i>
                   Cart[{{$count}}]</a>
               </li>
 
+                        <x-app-layout>
+
+                        </x-app-layout>
+                        
+                    @else
+                        <li><a class="nav-link" href="{{ route('login') }}" >Log in</a><li>
+
+                        @if (Route::has('register'))
+                            <li><a class="nav-link" href="{{ route('register') }}" >Register</a><li>
+                        @endif
+                    @endauth
                 
-                  @else
-                      <a href="{{ route('login') }}" class="dropdown-item">Log in</a>
+            @endif
+            <li>
 
-                      @if (Route::has('register'))
-                          <a href="{{ route('register') }}" class="dropdown-item">Register</a>
-                      @endif
-                  @endauth
-              </div>
-          @endif
+
+
+
             </ul>
-          </li>
-        </ul>
-
-      </button>  
-
-   
-    </div>
+          </div>
+        
+      </nav>
+      </div>
   </div>
    
   <nav class="container navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
@@ -119,15 +107,7 @@
     </div>
   </nav>
 
-</div>
 
-@if(session()->has('message'))
-<div class="alert alert-success">
-    <button type="button" class="close" data-dismiss="alert">x</button>
-    {{session()->get('message')}}
-</div>
-@endif
-</header>
 
 
 @if(session()->has('message'))
@@ -168,33 +148,10 @@
   </form>
   </div>
 
-   <!-- Bootstrap core JavaScript -->
-   <script src="vendor/jquery/jquery.min.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
 
    <!-- Additional Scripts -->
-   <script src="assets/js/custom.js"></script>
-   <script src="assets/js/owl.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/isotope.js"></script>
-   <script src="assets/js/accordions.js"></script>
 
-
-   <script language = "text/Javascript"> 
-     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-     function clearField(t){                   //declaring the array outside of the
-     if(! cleared[t.id]){                      // function makes it static and global
-         cleared[t.id] = 1;  // you could use true and false, but that's more typing
-         t.value='';         // with more chance of typos
-         t.style.color='#fff';
-         }
-     }
-   </script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   
 </body>
